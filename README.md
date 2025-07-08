@@ -23,9 +23,10 @@ We collected and uniformly processed publicly available epigenomic data on the f
 * Pan-hematopoiesis ABC enhancers: 207,648
 
 **Atlas v1 files:**
-* [Samplesheet v1](https://pages.github.com/) - metadata on all biosamples used to build ABC maps
-* [Pan-hematopoiesis Enhancers Count Matrix v1](https://pages.github.com/) - raw chromatin accessibility NGS read counts over a non-redundant set of ABC enhancers across all biosamples
-* [Pan-hematopoiesis Enhancers Normalized Count Matrix v1](https://pages.github.com/) - the raw count matrix was counts-per-million normalized, log2 transformed, batch-corrected based on TSS scores (reflective of sample quality) and then quantile-normalized
+* [Samplesheet v1](https://github.com/mnajia/Human-Hematopoiesis-Enhancer-Gene-Atlas/blob/main/atlas_v1/Human_Hematopoiesis_ABC_Atlas_v1_samplesheet.txt) - metadata on all biosamples used to build ABC maps
+* [Enhancer-Gene Predictions v1](https://github.com/mnajia/Human-Hematopoiesis-Enhancer-Gene-Atlas/blob/main/atlas_v1/Human_Hematopoiesis_ABC_Atlas_v1_hg38.rds) - ABC maps for all cell types and states stored as a GRanges object in R 
+* [Pan-hematopoiesis Enhancers Count Matrix v1](https://github.com/mnajia/Human-Hematopoiesis-Enhancer-Gene-Atlas/blob/main/atlas_v1/Human_Hematopoiesis_ABC_Atlas_v1_consensus_enhancers_count_matrix.rds) - raw chromatin accessibility NGS read counts over a non-redundant set of ABC enhancers across all biosamples
+* [Pan-hematopoiesis Enhancers Normalized Count Matrix v1]() - the raw count matrix was counts-per-million normalized, log2 transformed, batch-corrected based on TSS scores (reflective of sample quality) and then quantile-normalized
 
 
 ## Version 2
@@ -45,6 +46,7 @@ Version 2 of the atlas includes all the biosamples from Version 1 in addition to
 
 **Atlas v2 files:**
 * [Samplesheet v2](https://pages.github.com/) - metadata on all biosamples used to build ABC maps
+* [Enhancer-Gene Predictions v2](https://pages.github.com/) - ABC maps for all cell types and states stored as a GRanges object in R 
 * [Pan-hematopoiesis Enhancers Count Matrix v2](https://pages.github.com/) - raw chromatin accessibility NGS read counts over a non-redundant set of ABC enhancers across all biosamples
 * [Pan-hematopoiesis Enhancers Normalized Count Matrix v2](https://pages.github.com/) - the raw count matrix was counts-per-million normalized, log2 transformed, batch-corrected based on TSS scores (reflective of sample quality) and then quantile-normalized
 
