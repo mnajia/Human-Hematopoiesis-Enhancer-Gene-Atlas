@@ -45,10 +45,10 @@ Version 2 of the atlas includes all the biosamples from Version 1 in addition to
 * Pan-hematopoiesis ABC enhancers: 250,818
 
 **Atlas v2 files:**
-* [Samplesheet v2](https://pages.github.com/) - metadata on all biosamples used to build ABC maps
-* [Enhancer-Gene Predictions v2](https://pages.github.com/) - ABC maps for all cell types and states stored as a GRanges object in R 
-* [Pan-hematopoiesis Enhancers Count Matrix v2](https://pages.github.com/) - raw chromatin accessibility NGS read counts over a non-redundant set of ABC enhancers across all biosamples
-* [Pan-hematopoiesis Enhancers Normalized Count Matrix v2](https://pages.github.com/) - the raw count matrix was counts-per-million normalized, log2 transformed, batch-corrected based on TSS scores (reflective of sample quality) and then quantile-normalized
+* [Samplesheet v2](https://github.com/mnajia/Human-Hematopoiesis-Enhancer-Gene-Atlas/blob/main/atlas_v2/Human_Hematopoiesis_ABC_Atlas_v2_samplesheet.txt) - metadata on all biosamples used to build ABC maps
+* [Enhancer-Gene Predictions v2](https://github.com/mnajia/Human-Hematopoiesis-Enhancer-Gene-Atlas/blob/main/atlas_v2/Human_Hematopoiesis_ABC_Atlas_v2_hg38.rds) - ABC maps for all cell types and states stored as a GRanges object in R 
+* [Pan-hematopoiesis Enhancers Count Matrix v2](https://github.com/mnajia/Human-Hematopoiesis-Enhancer-Gene-Atlas/blob/main/atlas_v2/Human_Hematopoiesis_ABC_Atlas_v2_consensus_enhancers_count_matrix.rds) - raw chromatin accessibility NGS read counts over a non-redundant set of ABC enhancers across all biosamples
+* [Pan-hematopoiesis Enhancers Normalized Count Matrix v2]() - the raw count matrix was counts-per-million normalized, log2 transformed, batch-corrected based on TSS scores (reflective of sample quality) and then quantile-normalized
 
 
 ## Contact 
