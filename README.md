@@ -3,7 +3,7 @@
 ![](figure.png)
 
 ## Description
-This repository contains a comprehensive atlas of enhancer-gene regulation in the human hematopoietic system. The atlas comprises genome-wide maps for all major hematopoietic cell types and activation states using the Activity-by-Contact (ABC) model (Fulco, et al. 2019 _Nature Genetics_; Nasser, et al. 2021 _Nature_). All enhancer predictions are presented in **hg38 coordinates**. Detailed descriptions of each atlas version are noted below. 
+This repository contains a comprehensive atlas of enhancer-gene regulation in the human hematopoietic system. The atlas comprises genome-wide maps for all major hematopoietic cell types and activation states using the Activity-by-Contact (ABC) model (Fulco, et al. 2019 _Nature Genetics_; Nasser, et al. 2021 _Nature_). All enhancer predictions are presented in **hg38 coordinates**. Detailed descriptions of each version of the atlas are documented below. 
 
 **Note:** If you use this resource, please cite: <citation>
 
