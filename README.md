@@ -60,12 +60,14 @@ Version 3 of the atlas includes all of the biosamples from Version 2 in addition
 * Enhancer-gene links: 5,120,044
 * Biosamples: 450
 * Cell-types / states: 90
-* Average number of enhancers-per-gene: 3.+/-0.
+* Average number of enhancers-per-gene: 3.14+/-0.31
 * Pan-hematopoiesis ABC enhancers: 254,207
 
 **Atlas v3 Files:**
 * [Samplesheet v3](https://github.com/mnajia/Human-Hematopoiesis-Enhancer-Gene-Atlas/blob/main/atlas_v3/Human_Hematopoiesis_ABC_Atlas_v3_samplesheet.txt) - metadata on all biosamples used to build ABC maps
 * [Enhancer-Gene Predictions v3](https://github.com/mnajia/Human-Hematopoiesis-Enhancer-Gene-Atlas/blob/main/atlas_v3/Human_Hematopoiesis_ABC_Atlas_v3_hg38.rds) - ABC maps for all cell types and states stored as a GRanges object in R 
+* [Pan-hematopoiesis Enhancers Count Matrix v3](https://github.com/mnajia/Human-Hematopoiesis-Enhancer-Gene-Atlas/blob/main/atlas_v3/Human_Hematopoiesis_ABC_Atlas_v3_consensus_enhancers_count_matrix.rds) - raw chromatin accessibility NGS read counts over a non-redundant set of ABC enhancers across all biosamples
+* [Pan-hematopoiesis Enhancers Normalized Count Matrix v3](https://github.com/mnajia/Human-Hematopoiesis-Enhancer-Gene-Atlas/blob/main/atlas_v3/Human_Hematopoiesis_ABC_Atlas_v3_consensus_enhancers_normalized_count_matrix_batch_corrected.rds) - the raw count matrix was counts-per-million normalized, log2 transformed, batch-corrected based on TSS scores (reflective of sample quality) and then quantile-normalized
 
 
 ## Human B cell Sub-Atlas
