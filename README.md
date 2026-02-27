@@ -15,14 +15,14 @@ We collected and uniformly processed publicly available epigenomic data on the f
 * Dendritic progenitor cells (Buenrostro, et al. 2018 _Cell_)
 * Immune cells +/- activation [Monocytes, Macrophages, B cell subtypes, T cell subtypes, Natural killer cell subtypes, Plasmablasts, Dendritic cells] (Calderon, et al. 2019 _Nature Genetics_; Buenrostro, et al. 2018 _Cell_; Ulirsch, et al. 2019 _Nature Genetics_; ENCODE Consortium)
 
-**Atlas v1 stats:**
+**Atlas v1 Stats:**
 * Enhancer-gene links: 3,793,019
 * Biosamples: 258
 * Cell-types / states: 65
 * Average number of enhancers-per-gene: 3.22+/-0.14
 * Pan-hematopoiesis ABC enhancers: 207,648
 
-**Atlas v1 files:**
+**Atlas v1 Files:**
 * [Samplesheet v1](https://github.com/mnajia/Human-Hematopoiesis-Enhancer-Gene-Atlas/blob/main/atlas_v1/Human_Hematopoiesis_ABC_Atlas_v1_samplesheet.txt) - metadata on all biosamples used to build ABC maps
 * [Enhancer-Gene Predictions v1](https://github.com/mnajia/Human-Hematopoiesis-Enhancer-Gene-Atlas/blob/main/atlas_v1/Human_Hematopoiesis_ABC_Atlas_v1_hg38.rds) - ABC maps for all cell types and states stored as a GRanges object in R 
 * [Pan-hematopoiesis Enhancers Count Matrix v1](https://github.com/mnajia/Human-Hematopoiesis-Enhancer-Gene-Atlas/blob/main/atlas_v1/Human_Hematopoiesis_ABC_Atlas_v1_consensus_enhancers_count_matrix.rds) - raw chromatin accessibility NGS read counts over a non-redundant set of ABC enhancers across all biosamples
@@ -30,25 +30,64 @@ We collected and uniformly processed publicly available epigenomic data on the f
 
 
 ## Version 2
-Version 2 of the atlas includes all the biosamples from Version 1 in addition to the following hematopoietic cell types:
+Version 2 of the atlas includes all of the biosamples from Version 1 in addition to the following hematopoietic cell types:
 * Expanded dendritic cell subtypes +/- activation [pDC, mDC, cDC1, cDC2] (Leylek, et al. 2020 _Cell Reports_; Corces, et al. 2018 _Science_)
 * Neutrophils +/- activation (Ram-Mohan, et al. 2021 _Life Science Alliance_)
 * Mast cells +/- activation (Cildir, et al. 2019 _Immunity_)
 * Basophils (Peng, et al. 2020 _Journal of Allergy and Clinical Immunology_)
 * Monocyte-derived macrophages +/- activation (Zhang, et al. 2022 _Genome Biology_)
 
-**Atlas v2 stats:**
+**Atlas v2 Stats:**
 * Enhancer-gene links: 4,772,727
 * Biosamples: 401
 * Cell-types / states: 84
 * Average number of enhancers-per-gene: 3.14+/-0.32
 * Pan-hematopoiesis ABC enhancers: 250,818
 
-**Atlas v2 files:**
+**Atlas v2 Files:**
 * [Samplesheet v2](https://github.com/mnajia/Human-Hematopoiesis-Enhancer-Gene-Atlas/blob/main/atlas_v2/Human_Hematopoiesis_ABC_Atlas_v2_samplesheet.txt) - metadata on all biosamples used to build ABC maps
 * [Enhancer-Gene Predictions v2](https://github.com/mnajia/Human-Hematopoiesis-Enhancer-Gene-Atlas/blob/main/atlas_v2/Human_Hematopoiesis_ABC_Atlas_v2_hg38.rds) - ABC maps for all cell types and states stored as a GRanges object in R 
 * [Pan-hematopoiesis Enhancers Count Matrix v2](https://github.com/mnajia/Human-Hematopoiesis-Enhancer-Gene-Atlas/blob/main/atlas_v2/Human_Hematopoiesis_ABC_Atlas_v2_consensus_enhancers_count_matrix.rds) - raw chromatin accessibility NGS read counts over a non-redundant set of ABC enhancers across all biosamples
 * [Pan-hematopoiesis Enhancers Normalized Count Matrix v2](https://github.com/mnajia/Human-Hematopoiesis-Enhancer-Gene-Atlas/blob/main/atlas_v2/Human_Hematopoiesis_ABC_Atlas_v2_consensus_enhancers_normalized_count_matrix_batch_corrected.rds) - the raw count matrix was counts-per-million normalized, log2 transformed, batch-corrected based on TSS scores (reflective of sample quality) and then quantile-normalized
+
+
+## Version 3
+Version 3 of the atlas includes all of the biosamples from Version 2 in addition to an extensive set of B cell populations:
+* B cell differentiation [Pro-B, Pre-B, Immature B, Transitional B] (Planell, et al. 2025 _Science Advances_)
+* Germinal center B cells [Dark Zone Centroblasts, Light Zone Centrocytes] (Doane, et al. 2021 _Nature Immunology_)
+
+**Atlas v3 Stats:**
+* Enhancer-gene links: 5,120,044
+* Biosamples: 450
+* Cell-types / states: 90
+* Average number of enhancers-per-gene: 3.+/-0.
+* Pan-hematopoiesis ABC enhancers: 254,207
+
+**Atlas v3 Files:**
+* [Samplesheet v3](https://github.com/mnajia/Human-Hematopoiesis-Enhancer-Gene-Atlas/blob/main/atlas_v3/Human_Hematopoiesis_ABC_Atlas_v3_samplesheet.txt) - metadata on all biosamples used to build ABC maps
+* [Enhancer-Gene Predictions v3](https://github.com/mnajia/Human-Hematopoiesis-Enhancer-Gene-Atlas/blob/main/atlas_v3/Human_Hematopoiesis_ABC_Atlas_v3_hg38.rds) - ABC maps for all cell types and states stored as a GRanges object in R 
+
+
+## Human B cell Sub-Atlas
+![](bcell_atlas.png)
+
+A B cell-specific enhancer-gene atlas includes the following samples:
+* B cell progenitors [CLP, Pro-B, Pre-B, Immature B, Transitional B, Naive B CD5+/-] (Planell, et al. 2025 _Science Advances_)
+* Differentiated B cells +/- activation [Naive B, Memory B, Plasmablasts] (Calderon, et al. 2019 _Nature Genetics_)
+* Germinal center B cells [Dark Zone Centroblasts, Light Zone Centrocytes] (Doane, et al. 2021 _Nature Immunology_)
+
+**B cell Atlas Stats:**
+* Enhancer-gene links: 922,644
+* Biosamples: 114
+* Cell-types / states: 16
+* Average number of enhancers-per-gene: 3.18+/-0.10
+* Pan-B ABC enhancers: 71,348
+
+**B cell Atlas Files:**
+* [Samplesheet v1](https://github.com/mnajia/Human-Hematopoiesis-Enhancer-Gene-Atlas/blob/main/bcell_atlas_v1/Human_B_cells_ABC_Atlas_v1_samplesheet.txt) - metadata on all biosamples used to build ABC maps
+* [Enhancer-Gene Predictions v1](https://github.com/mnajia/Human-Hematopoiesis-Enhancer-Gene-Atlas/blob/main/bcell_atlas_v1/Human_B_cells_ABC_Atlas_v1_hg38.rds) - ABC maps for all cell types and states stored as a GRanges object in R 
+* [Pan-B Enhancers Count Matrix v1](https://github.com/mnajia/Human-Hematopoiesis-Enhancer-Gene-Atlas/blob/main/bcell_atlas_v1/Human_B_cells_ABC_Atlas_v1_consensus_enhancers_count_matrix.rds) - raw chromatin accessibility NGS read counts over a non-redundant set of ABC enhancers across all biosamples
+* [Pan-B Enhancers Normalized Count Matrix v1](https://github.com/mnajia/Human-Hematopoiesis-Enhancer-Gene-Atlas/blob/main/bcell_atlas_v1/Human_B_cells_ABC_Atlas_v1_consensus_enhancers_normalized_count_matrix_batch_corrected.rds) - the raw count matrix was counts-per-million normalized, log2 transformed, batch-corrected based on TSS scores (reflective of sample quality) and then quantile-normalized
 
 
 ## Contact 

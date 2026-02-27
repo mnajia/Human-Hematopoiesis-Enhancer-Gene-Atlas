@@ -1,0 +1,12 @@
+Activated_CD19+_B	Activated_Memory_B	Activated_Naive_B	B_Centroblast	B_Centrocyte	CD19+_B	CLP	Immature_B	Memory_B	Naive_B	Naive_B_CD5-	Naive_B_CD5+	Plasmablast	PreB	ProB	Transitional_B
+Activated B	3	4	3	0	0	0	0	0	0	0	0	0	0	0	0	0
+CLP	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0
+GCB	0	0	0	7	3	0	0	0	0	0	0	0	0	0	0	0
+Immature B	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0
+Memory B	0	0	0	0	0	0	0	0	7	1	0	0	0	0	0	0
+Naive B 1	0	0	0	0	0	0	0	0	0	0	10	8	0	0	0	0
+Naive B 2	0	0	0	0	0	3	0	0	0	9	0	0	0	0	0	0
+Plasmablast	0	0	0	0	0	0	0	0	0	0	0	0	7	0	0	0
+Pre-B	0	0	0	0	0	0	0	0	0	0	0	0	0	10	0	0
+Pro-B	0	0	0	0	0	0	0	0	0	0	0	0	0	0	10	0
+Transitional B	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	10
